@@ -15,6 +15,9 @@ createPixels();
 const pixelList = document.getElementsByClassName('pixel');
 const colorPalette = document.getElementById('color-palette');
 const pallete = document.getElementsByClassName('color');
+let selectedPixel = document.querySelector('#color-one');
+let selectedCSS = window.getComputedStyle(selectedPixel, null);
+let selectedColor = selectedCSS.getPropertyValue('background-color');
 
 function colorSelector(event) {
   if (event.target.classList.contains('color')) {
@@ -22,18 +25,18 @@ function colorSelector(event) {
       pallete[i].classList.remove('selected');
     }
     event.target.classList.add('selected');
+    selectedPixel = document.querySelector('#color-palette .selected');
+    selectedCSS = window.getComputedStyle(selectedPixel, null);
+    selectedColor = selectedCSS.getPropertyValue('background-color');
   }
 }
 document.addEventListener('click', colorSelector, true);
 
 /* Crie uma função que permita preencher um pixel do quadro com a cor selecionada na paleta de cores. */
 
-function pixelPainter(event) {
-  if (event.target.classList.contains('pixel')) {
-    for (const pixel of pixelList) {
-      pixel.classList.remove('selected');
-    }
-    event.target.classList.add('selected');
-  }
-}
-document.addEventListener('click', pixelPainter, true);
+// function pixelPainter(event) {
+//   if (event.target.classList.contains('pixel')) {
+//     document.event.target.style.backgroundColor(selectedColor);
+//   }
+// }
+// document.addEventListener('click', pixelPainter, true);
