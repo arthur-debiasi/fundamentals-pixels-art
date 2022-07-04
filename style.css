@@ -1,31 +1,36 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
-.color, .pixel{
-    border: black solid 1px;
-    background-color: white;
-    width: 40px;
-    height: 40px;
+.color,
+.pixel {
+  border: black solid 1px;
+  background-color: white;
+  width: 40px;
+  height: 40px;
 }
-.color:nth-child(1){
-    background-color: black;
+#color-one {
+  background-color: black;
 }
-.color:nth-child(2){
-    background-color: red;
+#color-two {
+  background-color: red;
 }
-.color:nth-child(3){
-    background-color: green;
+#color-three {
+  background-color: green;
 }
-.color:nth-child(4){
-    background-color: blue;
+#color-four {
+  background-color: blue;
 }
 
 #pixel-board {
-    width: 210px;
-    height: 210px;
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px black solid;
+  width: 210px;
+  height: 210px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px black solid;
+}
+
+.selected {
+    background-color: red;
 }
