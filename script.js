@@ -28,13 +28,12 @@ document.addEventListener('click', colorSelector, true);
 
 /* Crie uma função que permita preencher um pixel do quadro com a cor selecionada na paleta de cores. */
 
-// function pixelPainter(event) {
-//   for (const pixels of pixelList) {
-//     pixels.classList.remove('selected');
-//   }
-//   if (event.target.classList.contains('pixel')) {
-//     event.target.classList.add('selected');
-//   }
-// }
-
-// document.addEventListener('click', pixelPainter, false);
+function pixelPainter(event) {
+  if (event.target.classList.contains('pixel')) {
+    for (const pixel of pixelList) {
+      pixel.classList.remove('selected');
+    }
+    event.target.classList.add('selected');
+  }
+}
+document.addEventListener('click', pixelPainter, true);
