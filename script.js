@@ -1,14 +1,17 @@
-/* ===== Cria dinâmicamente os 25 pixels ===== */
+/* ===== Cria dinamicamente os 25 pixels ===== */
 const pixelBoard = document.getElementById('pixel-board');
 
-function createPixels() {
-  for (let index = 0; index < 25; index += 1) {
+let gridSize = 5;
+
+function createPixels(gridSize) {
+  let pixelAmount = gridSize * gridSize;
+  for (let index = 0; index < pixelAmount; index += 1) {
     const pixels = document.createElement('div');
     pixels.className = 'pixel';
     pixelBoard.appendChild(pixels);
   }
 }
-createPixels();
+createPixels(gridSize);
 
 /* ====================  uma função para selecionar uma cor na paleta de cores  ==================== */
 
@@ -54,4 +57,25 @@ clearBtn.addEventListener('click', clearBoard);
 
 const input = document.getElementById('board-size');
 
-input.setAttribute('min', 0);
+input.setAttribute('min', 1);
+
+const vqvBtn = document.getElementById('generate-board');
+vqvBtn.innerText = 'VQV';
+
+function removePixels() {
+  let pixelList = document.querySelectorAll('.pixel');
+  for (let index = 0; index < pixelList.length; index += 1) {
+    pixelList[index].remove();
+  }
+}
+
+function boardSizer(event) {
+  gridSize = input.value;
+  if (gridSize === '') {
+    alert('Board inválido!');
+  }
+  removePixels();
+  createPixels(gridSize);
+}
+
+vqvBtn.addEventListener('click', boardSizer);
