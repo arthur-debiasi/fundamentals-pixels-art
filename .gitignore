@@ -1,3 +1,55 @@
 # VSCode repo settings
 .vscode
 node_modules
+cypress/reports/mochawesome.json
+cypress/screenshots/project.spec.js/1 - Adicione à página o título Paleta de Cores -- Verifica se contém um elemento `h1` com o id `title` com o título correto -- before each hook (failed).png
+cypress/screenshots/project.spec.js/2 - Adicione à página uma paleta de quatro cores distintas -- A paleta de cores deve ser um elemento com `id` denominado `color-palette` e ter mais de 0px de altura e de largura -- before each hook (failed).png
+cypress/screenshots/project.spec.js/2 - Adicione à página uma paleta de quatro cores distintas -- A paleta de cores deve ser um elemento com `id` denominado `color-palette` e ter mais de 0px de altura e de largura (failed).png
+cypress/screenshots/project.spec.js/2 - Adicione à página uma paleta de quatro cores distintas -- Verifica se a cor de fundo de cada elemento da paleta é a cor que o elemento representa. A única cor não permitida na paleta é a cor branca (failed).png
+cypress/screenshots/project.spec.js/2 - Adicione à página uma paleta de quatro cores distintas -- Verifica se a paleta de cores está posicionada abaixo do título 'Paleta de Cores' (failed).png
+cypress/screenshots/project.spec.js/2 - Adicione à página uma paleta de quatro cores distintas -- Verifica se a paleta de cores não contém cores repetidas (failed).png
+cypress/screenshots/project.spec.js/2 - Adicione à página uma paleta de quatro cores distintas -- Verifica se a paleta lista todas as cores disponíveis para utilização, lado a lado (failed).png
+cypress/screenshots/project.spec.js/2 - Adicione à página uma paleta de quatro cores distintas -- Verifica se cada cor individual da paleta de cores possui a `classe` chamada `color` (failed).png
+cypress/screenshots/project.spec.js/2 - Adicione à página uma paleta de quatro cores distintas -- Verifica se cada elemento da paleta de cores tem uma borda preta, sólida e com 1 pixel de largura; (failed).png
+cypress/screenshots/project.spec.js/3 - Adicione a cor preta como a primeira cor da paleta de cores -- Verifica se a primeira cor da paleta é preta -- before each hook (failed).png
+cypress/screenshots/project.spec.js/3 - Adicione a cor preta como a primeira cor da paleta de cores -- Verifica se a primeira cor da paleta é preta (failed).png
+cypress/screenshots/project.spec.js/3 - Adicione a cor preta como a primeira cor da paleta de cores -- Verifica se as demais cores podem ser escolhidas livremente (failed).png
+cypress/screenshots/project.spec.js/4 - Adicione à página um quadro de pixels, com 25 pixels -- Verifica se a cor inicial dos pixels dentro do quadro, ao abrir a página, é branca (failed).png
+cypress/screenshots/project.spec.js/4 - Adicione à página um quadro de pixels, com 25 pixels -- Verifica se cada pixel individual dentro do quadro possui a `classe` denominada `pixel` (failed).png
+cypress/screenshots/project.spec.js/4 - Adicione à página um quadro de pixels, com 25 pixels -- Verifica se o quadro de pixels aparece abaixo da paleta de cores (failed).png
+cypress/screenshots/project.spec.js/4 - Adicione à página um quadro de pixels, com 25 pixels -- Verifica se o quadro de pixels possui o `id` denominado `pixel-board` -- before each hook (failed).png
+cypress/screenshots/project.spec.js/4 - Adicione à página um quadro de pixels, com 25 pixels -- Verifica se o quadro de pixels possui o `id` denominado `pixel-board` (failed).png
+cypress/screenshots/project.spec.js/5 - Faça com que cada elemento do quadro de pixels possua 40 pixels de largura, 40 pixels de altura e seja delimitado por uma borda preta de 1 pixel -- Verifica se 40 pixels é o tamanho total do elemento, incluindo seu c (failed).png
+cypress/screenshots/project.spec.js/5 - Faça com que cada elemento do quadro de pixels possua 40 pixels de largura, 40 pixels de altura e seja delimitado por uma borda preta de 1 pixel -- Verifica se o quadro de pixels tem altura e comprimento de 5 element (failed).png
+cypress/screenshots/project.spec.js/6 - Defina a cor preta como cor inicial. Ao carregar a página a cor preta já deve estar selecionada para pintar os pixels -- Verifica se nenhuma outra cor da paleta tem a `classe` `selected` (failed).png
+cypress/screenshots/project.spec.js/6 - Defina a cor preta como cor inicial. Ao carregar a página a cor preta já deve estar selecionada para pintar os pixels -- Verifica se o elemento da cor preta possui, inicialmente, a `classe` `selected` -- before each  (failed).png
+cypress/screenshots/project.spec.js/6 - Defina a cor preta como cor inicial. Ao carregar a página a cor preta já deve estar selecionada para pintar os pixels -- Verifica se o elemento da cor preta possui, inicialmente, a `classe` `selected` (failed).png
+cypress/screenshots/project.spec.js/7 - Clicar em uma das cores da paleta, faz com que ela seja selecionada e utilizada para preencher os pixels no quadro -- Verifica se os pixels dentro do quadro não têm a classe `selected` quando são clicados (failed).png
+cypress/screenshots/project.spec.js/7 - Clicar em uma das cores da paleta, faz com que ela seja selecionada e utilizada para preencher os pixels no quadro -- Verifica se somente uma cor da paleta de cores tem a classe `selected` de cada vez -- before each  (failed).png
+cypress/screenshots/project.spec.js/7 - Clicar em uma das cores da paleta, faz com que ela seja selecionada e utilizada para preencher os pixels no quadro -- Verifica se somente uma cor da paleta de cores tem a classe `selected` de cada vez (failed).png
+cypress/screenshots/project.spec.js/8 - Clicar em um pixel dentro do quadro após selecionar uma cor na paleta, faz com que o pixel seja preenchido com a cor selecionada -- Verifica se ao carregar a página deve ser possível pintar os pixels de preto -- befo (failed).png
+cypress/screenshots/project.spec.js/8 - Clicar em um pixel dentro do quadro após selecionar uma cor na paleta, faz com que o pixel seja preenchido com a cor selecionada -- Verifica se ao carregar a página deve ser possível pintar os pixels de preto (failed).png
+cypress/screenshots/project.spec.js/8 - Clicar em um pixel dentro do quadro após selecionar uma cor na paleta, faz com que o pixel seja preenchido com a cor selecionada -- Verifica se após selecionar uma outra cor na paleta, é possível pintar os pixels com (failed).png
+cypress/screenshots/project.spec.js/8 - Clicar em um pixel dentro do quadro após selecionar uma cor na paleta, faz com que o pixel seja preenchido com a cor selecionada -- Verifica se somente o pixel que foi clicado foi preenchido com a cor selecionada, se (failed).png
+cypress/screenshots/project.spec.js/9 - Crie um botão que, ao ser clicado, limpa o quadro preenchendo a cor de todos seus pixels com branco -- Verifica se ao clicar no botão, o quadro de pixels é totalmente preenchido de branco (failed).png
+cypress/screenshots/project.spec.js/9 - Crie um botão que, ao ser clicado, limpa o quadro preenchendo a cor de todos seus pixels com branco -- Verifica se o botão está posicionado entre a paleta de cores e o quadro de pixels (failed).png
+cypress/screenshots/project.spec.js/9 - Crie um botão que, ao ser clicado, limpa o quadro preenchendo a cor de todos seus pixels com branco -- Verifica se o botão tem o `id` denominado `clear-board` -- before each hook (failed).png
+cypress/screenshots/project.spec.js/9 - Crie um botão que, ao ser clicado, limpa o quadro preenchendo a cor de todos seus pixels com branco -- Verifica se o botão tem o `id` denominado `clear-board` (failed).png
+cypress/screenshots/project.spec.js/9 - Crie um botão que, ao ser clicado, limpa o quadro preenchendo a cor de todos seus pixels com branco -- Verifica se o texto do botão é 'Limpar' (failed).png
+cypress/screenshots/project.spec.js/10 - Faça o quadro de pixels ter seu tamanho definido pelo usuário -- Verifica se ao clicar no botão com um valor preenchido, o tamanho do board muda (failed).png
+cypress/screenshots/project.spec.js/10 - Faça o quadro de pixels ter seu tamanho definido pelo usuário -- Verifica se existe um botão com o id `generate-board` (failed).png
+cypress/screenshots/project.spec.js/10 - Faça o quadro de pixels ter seu tamanho definido pelo usuário -- Verifica se existe um input com o id `board-size` -- before each hook (failed).png
+cypress/screenshots/project.spec.js/10 - Faça o quadro de pixels ter seu tamanho definido pelo usuário -- Verifica se existe um input com o id `board-size` (failed).png
+cypress/screenshots/project.spec.js/10 - Faça o quadro de pixels ter seu tamanho definido pelo usuário -- Verifica se nenhum valor for colocado no input ao clicar no botão, um `alert` é exibido com o texto 'Board inválido!' (failed).png
+cypress/screenshots/project.spec.js/10 - Faça o quadro de pixels ter seu tamanho definido pelo usuário -- Verifica se o botão contém o texto 'VQV' (failed).png
+cypress/screenshots/project.spec.js/10 - Faça o quadro de pixels ter seu tamanho definido pelo usuário -- Verifica se o botão está posicionado ao lado do input (failed).png
+cypress/screenshots/project.spec.js/10 - Faça o quadro de pixels ter seu tamanho definido pelo usuário -- Verifica se o input está posicionado entre a paleta de cores e o quadro de pixels (failed).png
+cypress/screenshots/project.spec.js/10 - Faça o quadro de pixels ter seu tamanho definido pelo usuário -- Verifica se o input só aceita número maiores que zero. Essa restrição deve ser feita usando os atributos do elemento `input` (failed).png
+cypress/screenshots/project.spec.js/10 - Faça o quadro de pixels ter seu tamanho definido pelo usuário -- Verifica se o novo quadro tem todos os pixels preenchidos com a cor branca (failed).png
+cypress/screenshots/project.spec.js/11 - Limite o tamanho mínimo e máximo do board -- Verifica se a altura do board é 5 quando um valor menor é colocado no input (failed).png
+cypress/screenshots/project.spec.js/11 - Limite o tamanho mínimo e máximo do board -- Verifica se a altura do board é 50 quando um valor maior é colocado no input (failed).png
+cypress/screenshots/project.spec.js/11 - Limite o tamanho mínimo e máximo do board -- Verifica se a altura máxima do board é 50 -- before each hook (failed).png
+cypress/screenshots/project.spec.js/11 - Limite o tamanho mínimo e máximo do board -- Verifica se a altura máxima do board é 50 (failed).png
+cypress/screenshots/project.spec.js/12 - Faça com que as cores da paleta sejam geradas aleatoriamente ao carregar a página -- Verifica se a cor preta ainda está presente e é a primeira na sua paleta de cores (failed).png
+cypress/screenshots/project.spec.js/12 - Faça com que as cores da paleta sejam geradas aleatoriamente ao carregar a página -- Verifica se as cores geradas na paleta são diferentes a cada carregamento da página -- before each hook (failed).png
+cypress/screenshots/project.spec.js/12 - Faça com que as cores da paleta sejam geradas aleatoriamente ao carregar a página -- Verifica se as cores geradas na paleta são diferentes a cada carregamento da página (failed).png
