@@ -1,3 +1,22 @@
+const colorOne = document.getElementById('color-one');
+const colorTwo = document.getElementById('color-two');
+const colorThree = document.getElementById('color-three');
+const colorFour = document.getElementById('color-four');
+function random255() {
+  return Math.floor(Math.random() * 10 * 25.5);
+}
+function randomColor() {
+  const rColor = random255();
+  const gColor = random255();
+  const bColor = random255();
+  const rGBColor = `rgb(${rColor}, ${gColor}, ${bColor})`;
+  return rGBColor;
+}
+colorOne.style.backgroundColor = 'black';
+colorTwo.style.backgroundColor = randomColor();
+colorThree.style.backgroundColor = randomColor();
+colorFour.style.backgroundColor = randomColor();
+
 /* ===== Cria dinamicamente os 25 pixels ===== */
 const pixelBoard = document.getElementById('pixel-board');
 
@@ -7,7 +26,7 @@ function createPixels(Size) {
   const pixelAmount = Size * Size;
   for (let index = 0; index < pixelAmount; index += 1) {
     const pixels = document.createElement('div');
-    const dimension = (210 - (2 * gridSize)) / gridSize;
+    const dimension = (210 - 2 * gridSize) / gridSize;
     pixels.className = 'pixel';
     pixels.style.width = `${dimension}px`;
     pixels.style.height = `${dimension}px`;
