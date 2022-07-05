@@ -51,3 +51,7 @@ function clearBoard() {
 }
 
 clearBtn.addEventListener('click', clearBoard);
+
+const input = document.getElementById('board-size');
+
+input.setAttribute('min', 0);
