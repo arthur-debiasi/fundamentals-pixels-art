@@ -13,7 +13,6 @@ createPixels();
 /* ====================  uma função para selecionar uma cor na paleta de cores  ==================== */
 
 const pixelList = document.getElementsByClassName('pixel');
-const colorPalette = document.getElementById('color-palette');
 const pallete = document.getElementsByClassName('color');
 let selectedPixel = document.querySelector('#color-one');
 let selectedCSS = window.getComputedStyle(selectedPixel, null);
@@ -42,3 +41,13 @@ function pixelPainter(event) {
   }
 }
 document.addEventListener('click', pixelPainter, true);
+
+const clearBtn = document.getElementById('clear-board');
+
+function clearBoard() {
+  for (let index = 0; index < pixelList.length; index += 1) {
+    pixelList[index].style.backgroundColor = 'white';
+  }
+}
+
+clearBtn.addEventListener('click', clearBoard);
