@@ -3,11 +3,14 @@ const pixelBoard = document.getElementById('pixel-board');
 
 let gridSize = 5;
 
-function createPixels(gridSize) {
-  let pixelAmount = gridSize * gridSize;
+function createPixels(Size) {
+  const pixelAmount = Size * Size;
   for (let index = 0; index < pixelAmount; index += 1) {
     const pixels = document.createElement('div');
+    const dimension = (210 - (2 * gridSize)) / gridSize;
     pixels.className = 'pixel';
+    pixels.style.width = `${dimension}px`;
+    pixels.style.height = `${dimension}px`;
     pixelBoard.appendChild(pixels);
   }
 }
@@ -63,16 +66,22 @@ const vqvBtn = document.getElementById('generate-board');
 vqvBtn.innerText = 'VQV';
 
 function removePixels() {
-  let pixelList = document.querySelectorAll('.pixel');
-  for (let index = 0; index < pixelList.length; index += 1) {
-    pixelList[index].remove();
+  const pixelRemoveList = document.querySelectorAll('.pixel');
+  for (let index = 0; index < pixelRemoveList.length; index += 1) {
+    pixelRemoveList[index].remove();
   }
 }
 
-function boardSizer(event) {
+function boardSizer() {
   gridSize = input.value;
   if (gridSize === '') {
     alert('Board inválido!');
+  }
+  if (gridSize < 5) {
+    gridSize = 5;
+  }
+  if (gridSize > 50) {
+    gridSize = 50;
   }
   removePixels();
   createPixels(gridSize);
