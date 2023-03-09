@@ -1,4 +1,4 @@
-# [Trybe](https://www.betrybe.com/) Project - [Pixels Art](https://arthur-debiasi.github.io/fundamentals-pixels-art/)
+# [Trybe](https://www.betrybe.com/) Project - [Pixels Art](https://arthur-debiasi.github.io/trybe-fundamentals-pixels-art/)
 
 ## 💻 Project
 
